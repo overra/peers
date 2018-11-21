@@ -1,0 +1,34 @@
+html,
+body,
+#app,
+.layout {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  background-color: #ccc;
+}
+
+.layout {
+  display: grid;
+  grid-template-areas:
+    "head head"
+    "side body";
+
+  grid-template-rows: 60px auto;
+  grid-template-columns: 300px auto;
+
+  & > header {
+    grid-area: head;
+  }
+
+  & > aside {
+    grid-area: side;
+  }
+
+  & > section {
+    grid-area: body;
+    background-color: #fff;
+  }
+}
