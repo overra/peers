@@ -1,16 +1,17 @@
 import { html } from "htm/preact/standalone";
 import "./layout.less";
-import Users from "./users";
+import Posts from "./posts";
+import CreatePost from "./create-post";
 
 export default () => {
   return html`
     <div class="layout">
         <header>peers</header>
         <aside>
-            navigation
+            <${CreatePost} />
         </aside>
         <section>
-            <${Users} />
+            <${Posts} />
         </section>
     </div>
   `;
