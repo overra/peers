@@ -24,7 +24,8 @@
     "babel-plugin-transform-react-jsx": "^6.24.1",
     "blade.macro": "^0.1.11",
     "less": "^3.8.1",
-    "parcel-bundler": "^1.10.3"
+    "parcel-bundler": "^1.10.3",
+    "parcel-plugin-bundle-visualiser": "^1.2.0"
   },
   "alias": {
     "react": "preact-compat",
